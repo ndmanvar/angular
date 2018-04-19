@@ -25,13 +25,14 @@ export class AppComponent {
   }
 
   malformed() {
+    Raven.setUserContext({page: 'checkout'})
     decodeURIComponent('%');
   }
 
   // ERRORS
   notAFunctionError() {
     var someArray = [{ func: function () {}}];
-    someArray[1].func();
+    someArray[0].func();
   }
 
   uriError() {
