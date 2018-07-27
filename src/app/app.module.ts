@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 
 Raven
   .config('https://6dd6b79934654822b631951be27ec0e1@sentry.io/1190123', {
-    release: "747149d27860b28a5283c98623cfd8c5ab5f152f"
+    release: "0df4204d5fb22a5774a5ae89c3c608393ad17b0d"
   })
   .install();
 
